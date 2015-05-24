@@ -3,9 +3,15 @@ layout: master
 title: 10 times programmer
 ---
 
+The Intro
+---------
+
 I don't remember the first time that I heard (or rather read) about the 10x programmer. But I know the context in which I did: 10x programmer is the cowboy coder that costs more in the long run.
 
 I have not read the original research that brought the idea where it is described the difference between programmers. I have read, though, [Peopleware]() and quite a few number of articles and blogs to the matter. 
+
+Some thoughs
+------------
 
 Let's do some reducionist logic. Let's say there is no 10x programmer. Surely, if there is no 10x programmer, then there is no 9x programmer. If there is no 10x programmer, surely you can't consider someone that is nearly as good. If there is no 9x programmer, then there is no 8x programmer. If you continue, then there is no 7x, 6x, 5x, 4x, 3x or 2x programmer. Therefore, all programmers are equal, and no one is better than any other. Therefore, all programmers are interchangeable.
 

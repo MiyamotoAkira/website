@@ -3,19 +3,18 @@ layout: master
 title: Main
 ---
 
-<div class="posts">
+<div class="centered posts">
   Musings, ramblings and code
   <ul>
 	{% for post in site.posts %}
 	<li>
 	  <a href="{{ post.url }}">{{ post.title }}</a>
-	  {{ post.excerpt }}
 	</li>
 	{% endfor %}
   </ul>
 </div>
 
-<div class="licenses">
+<div class="centered licenses">
   <div>
 	For all code - MIT license
   </div>
