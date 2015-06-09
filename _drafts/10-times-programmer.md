@@ -21,3 +21,4 @@ When people dismiss the idea of the 10x programmer, most of the articles/blogs/t
 
 I wouldn't use that as a definition of a better programmer. Is not about the typing speed, but about the quality of the code, defined in terms of correctness, robustness, adaptability and clarity. A programmer is not someone that follows a very specific set of instructions but thinks and takes decisions and do design choices.
 
+The other, and very correct, annoyance with 10x programmer is its use by recruitment. A "rockstar programmer", a "10x programmer". Those people don't have a clue of what they are trying to get. My experience with recruiters have not been very good, and curerntly I only contemplate the use of Stack Careers for it.
