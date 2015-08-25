@@ -1,5 +1,36 @@
 .centered {
 	margin-left: auto;
 	margin-right: auto;
-	width: 20em;
+	width: 15em;
+}
+
+.post {
+	margin-left: auto;
+	margin-right: auto;
+	width: 40em;	
+}
+
+.title {
+	margin-left:auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+	display: table-cell;
+}
+
+.titlebar {
+	background-color:black;
+	color: lime;
+	height: 100;
+	margin-bottom: 10;
+	display: table;
+	width: 100%;
+}
+
+.license {
+	text-align:center;
+	width: 30em;
 }

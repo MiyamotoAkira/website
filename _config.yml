@@ -1,0 +1,22 @@
+highlighter: pygments
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "master"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "drafts"
+    values:
+      layout: "post"
+      
+encoding: utf-8
