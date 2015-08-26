@@ -7,8 +7,22 @@
   </head>
   <body>
 	{% include header.html %}
+	<div class="return">
+	  <br/>
+	  <a href="/">Return to Index</a>
+	  <br/>
+	</div>
+	<div class="postTitle">
+	  <h4>{{ page.title }}</h4>
+	</div>
 	<div class="post">
 	  {{ content }}
+	</div>
+	<div class="return">
+	  <br/>
+	  <a href="/">Return to Index</a>
+	  <br/>
+	  <br/>
 	</div>
 	{% include footer.html %}
 	<div class="scripts">

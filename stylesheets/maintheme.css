@@ -30,12 +30,19 @@
 	overflow:hidden;
 }
 
-.title>a:visited{
-	color: lime;
+.postTitle {
+	font-weight: bold;
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+	width:100%;
 }
 
-.title>a:link{
-	color:lime;
+.return {
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+	width:100%;
 }
 
 .titlebar {
