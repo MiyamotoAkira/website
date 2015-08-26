@@ -1,36 +1,54 @@
 .centered {
 	margin-left: auto;
 	margin-right: auto;
-	width: 15em;
+	max-width: 15em;
+}
+
+.logo {
+	display:inline-block;
+	vertical-align: middle;
+	float:left;
+}
+
+.message {
+	display:inline-block;
+	vertical-align: middle;
+	margin-right:10;
+	float:right;
 }
 
 .post {
 	margin-left: auto;
 	margin-right: auto;
-	width: 40em;	
+	max-width: 40em;	
 }
 
 .title {
-	margin-left:auto;
-	margin-right: auto;
-	margin-top: auto;
-	margin-bottom: auto;
 	font-weight: bold;
-	text-align: center;
-	vertical-align: middle;
-	display: table-cell;
+	display: inline-block;
+	align:center;
+	overflow:hidden;
+}
+
+.title>a:visited{
+	color: lime;
+}
+
+.title>a:link{
+	color:lime;
 }
 
 .titlebar {
 	background-color:black;
 	color: lime;
-	height: 100;
+	height: 81;
 	margin-bottom: 10;
 	display: table;
 	width: 100%;
+	text-align:center;
 }
 
 .license {
 	text-align:center;
-	width: 30em;
+	max-width: 30em;
 }
