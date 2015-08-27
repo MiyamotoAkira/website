@@ -58,13 +58,12 @@ namespace TestFactorySubstitute
 
 {% endhighlight %}
 
-The next day after checking the above code the idea was applied at work to eliminate three connected factories (not created by me, but it could as well have been), and replace them with a single lambda expression.
+The next day after checking the above code the idea was applied at work to eliminate two connected factories (not created by me, but it could as well have been), and replace them with a single lambda expression.
 
 That doesn't mean that factories are bad. They are quite useful if there is some logic applied on the factory. Is just means that I will be able to skip them when there is no real need for them.
 
 Also, doesn't mean that constructor injection is wrong. But maybe you want to be able to inject on the method, instead of having to add a parameter in a constructor and a field for an injected object that is only going to happen once.
 
-References
-----------
+##### References
 
 [1] <a href="http://www.infoq.com/presentations/8-lines-code-refactoring">http://www.infoq.com/presentations/8-lines-code-refactoring</a> <a name="1"><a href="#return1">back up</a></a>
