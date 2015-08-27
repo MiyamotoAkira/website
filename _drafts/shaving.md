@@ -1,0 +1,33 @@
+---
+title: Shaving
+---
+
+### My shaving tools
+
+I have a Gillete Match 3 Turbo. Is a superb razor. It does a very good job of leaving my skin smooth, devoid of hair. But using it makes my skin sore and sometimes I cut myself.
+
+
+I have a Wilkinson Sword Hydro 3. The cut is not as good as the Gillete. But my skin barely suffers, and I just can't cut myself.
+
+
+Finally, I have a beard trimmer. Which leaves a nice stubble. And, unlike the other two, I don't need to have my face soaking wet (ideally after a shower), to reduce the chaos on my face.
+
+
+### Using them
+
+I use the first one on very special occasions or when there is a requirement of formality (weddings, interviews)
+
+
+I use the second one when I need to take out my beard, but is not a "big" occasion (going to a party, visiting family, ...). Also I use it if I haven't shave in a long while as a preparation, the day before, for using the first one.
+
+
+I use the third one for keeping the face relatively tidy, on when I go to standard social events (a dance night or visiting friends)
+
+
+As an aside, I had at some point a Wilkinson Quatro that I had to stop using because, due to the thickness of my hair, will clog up constantly (the space between the blades was just not big enough)
+
+
+I have three grooming tools that I use depending on the circumstances.
+
+
+And yet, on four different companies I have worked on, we had a single programming language to do everything. Disregarding what was the best tool for the job.
