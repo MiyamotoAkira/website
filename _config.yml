@@ -1,5 +1,11 @@
 highlighter: pygments
 
+name: Two Or More
+
+description: Musings and rambling, and some code.
+
+url: http://twoormore.eu
+
 defaults:
   -
     scope:
