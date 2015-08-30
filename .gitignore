@@ -4,6 +4,4 @@ _site/
 \#*\#
 .\#*
 
-config/
-Capfile
 .DS_Store
