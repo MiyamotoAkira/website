@@ -14,15 +14,13 @@ And that is why this website is here.
 
 In terms of technology, i have decided to use Jekyll for this website. There are a couple of  reasons for it. Which, of course, I will procceed to enumerate. What is the point otherwise.
 
-First, there is the point of limited time. I was working on creating my website from scratch. But there is not that much time available during the day, and there is more interesting code to write. 
+There is the point of limited time. I was working on creating my website from scratch. But there is not that much time available during the day, and there is more interesting code to write. 
 
-Secondly, as i was looking for the tech, the basic idea of being able to deploy as you check-in into github, is appealing. You know, Continuous Delivery and all that Jazz. I love the idea of having a history of changes that I have done to my blog posts and (hopefully) essays (like, lots and lots of words ... lots).
+As I was looking for tech, the basic idea of being able to deploy as you check-in into github is appealing. You know, Continuous Delivery and all that Jazz. I love the idea of having a history of changes that I have done to my blog posts and (hopefully) essays (like, lots and lots of words ... lots).
 
-Thirdly, the initial provider that I have chosen, Digital Ocean, has some help about doing this automated deployment.
+Originally I was planning to use Capistrano. But after having issues with it I decided to go down one layer and just use Rake directly. Still need to decide about how to have it done when I check-in (using Jenkins seems to be my current preferred choice).
 
-Lastly, it was about time to start putting my thoughts out here. With my own coded website, I would still be a bit away from doing it.
-
-Will I add anything fancy into the website? Bootstrap? Angular? Any other fancy stuff? I do not know. Will see as I try to do things. Though my initial idea is to keep it as simple as possible. Right now, no js at all, only a bit of css, and the web is responsive (wink, wink)
+Will I add anything fancy into the website? Bootstrap? Angular? Any other fancy stuff? I do not know. Will see as I try to do things. Though my initial idea is to keep it as simple as possible. Right now, no js at all, only a bit of css, and the web is responsive (wink, wink). Also, because of my current intentions of keeping it clean, no cookies. Hopefully I can keep the site clean for a long time.
 
 Mind you, probably should get a designer to do the header a bit more ... fancy.
 

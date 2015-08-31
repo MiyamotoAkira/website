@@ -1,7 +1,15 @@
 .centered {
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.posts {
 	max-width: 15em;
+}
+
+.rss {
+	text-align: center;
+	max-width: 80em;
 }
 
 .disclaimer {
