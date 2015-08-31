@@ -13,7 +13,7 @@ And that is why this website is here.
 
 ### The Tech
 
-In terms of technology, i have decided to use Jekyll for this website. There are a couple of  reasons for it. Which, of course, I will procceed to enumerate. What is the point otherwise.
+In terms of technology, I have decided to use Jekyll for this website. There are a couple of  reasons for it. Which, of course, I will procceed to enumerate. What is the point otherwise?.
 
 There is the point of limited time. I was working on creating my website from scratch. But there is not that much time available during the day, and there is more interesting code to write. 
 
