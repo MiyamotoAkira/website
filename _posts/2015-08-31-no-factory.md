@@ -1,5 +1,6 @@
 ---
 title: No factory
+date: 2015-08-31 17:32:00
 ---
 
 ### The Basics
