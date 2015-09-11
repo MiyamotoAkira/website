@@ -162,10 +162,6 @@ let myMethod2 () =
 
 Again, quite similar to what we have done before.
 
-{% highlight Clojure %}
-
-{% endhighlight %}
-
 #### Assignment inside a function
 But what about assignment?. Well, if it is something immutable, you can't. Which, again, is the default behaviour. Elixir, doesn't allow you to. Clojure, has no mutable local variables, and special cases for interoperability through the JVM (Ref and Agent). F# allows you to create mutable values, and anything that comes from C# is mutable.
 
@@ -184,6 +180,7 @@ public class MyObject
 {% endhighlight %}
 
 {% highlight FSharp %}
+// F#
 let x = MyObject "This is it"
 
 x.Sentence <- "This is other"
@@ -191,6 +188,30 @@ x.Sentence <- "This is other"
 {% endhighlight %}
 
 See that F# uses a different symbol (<-) for assignment. There is never confusion. = is binding, and <- is assignment when allowed.
+
+Elixir, though, no luck. You can't assign
+
+{% highlight Elixir %}
+# Elixir
+defmodule Card do
+	defstruct mana: 0, cost: 0
+end
+
+defmodule UseCard do
+	card = %Card{}
+
+	def tryToChange do
+		IO.puts card.mana
+		card.mana = 5
+		IO.puts card.mana
+	end
+	
+end
+{% endhighlight %}
+
+If you try to execute the above code it will complain the following error
+
+> (CompileError) structure.exs:10: cannot invoke remote function card.mana/0 inside match
 
 ### Rebinding
 
@@ -247,6 +268,7 @@ With the above you can rebind.
 FP languages are slightly divided over here. Some don't allow you to rebind at all, like Erlang. Some others, like Elixir and F#, do allow you to rebind, to make some more code readable. 
 
 {% highlight Elixir %}
+# Elixir
 defmodule Test do
     def myMethod do
 	   x = 5
