@@ -1,19 +1,23 @@
 ---
-title: Binding and Assignment
+title: Into Adventure - Part 1 - Binding and Assignment
 date: 2015-09-09 17:00:00
 ---
 
 ### The starter
 
-This post started as an idea while preparing a presentation on moving from OOP to FP. I nearly didn't mention it on the presentation, and then decided to talk a bit about it.
+This was a secondary idea while creating the presentation. Wasn't sure if I would add it to the presentation. But then realized that is a quite important concept. 
 
-The difference between binding and assignment didn't cross my mind until I was forced on FP to live without the latter (ok, some hybrid FP languages allow you to use assignment, but shouldn't be your default option)
+The difference between binding and assignment didn't cross my mind until I was forced on FP to live without the latter. Some hybrid FP languages (like F#) allow you to use assignment, but shouldn't be your default option if you want to actually do proper functional programming.
 
 ### What is binding?
 Binding is assigning some piece of code or data with a name, an identifier. The point of binding is to be able to easily use that piece of code or data inside the scope where the binding is used.
 
+The key points in the previous paragraph are identifier and scope. The former is about being easily able to use that piece of code or data. The latter indicates that the identifier only lives inside the scope where the identifier has been declared.
+
 ### What is assignemmt?
-Assignment is to change the value of data. The data is changed for the lifetime of the container of the data (that be a record, structure, object or collection)
+Assignment is to change the value of data. The data is changed for the lifetime of the container of the data (that be a record, structure, object or collection).
+
+To reiterate: Is a change for the full lifetime of the entity that you are changing. It is not limited by scope.
 
 ### The OOP way
 As I just mentioned, there is no clear separation on OOP languages between asignment and binding. Both things are mostly conflated into assignment. And then you don't think of the cases where is clearly binding. Now if you are into the theory of computing, you will already know the difference. But, for all OO programmers that I know personally, there is no difference.
@@ -77,7 +81,7 @@ Here is another example to drive the idea home better.
 {% highlight Ruby %}
 # Ruby
 
-class MyExample
+class ExampleObject
 	def initialize(sentence)
 		@sentence = sentence
 	end
@@ -127,16 +131,50 @@ public class MyExample2
 
 {% endhighlight %}
 
-So above, we are creating an object of type MyObject and then, inside MyAssignmentMethod I am changing the value of the Sentence property. Unlike the binding done before, which is limited to the scope, we are changing the value here for the life of the object, not the scope of the method.
+So above, we are creating an object of type **MyObject** and then, inside **MyAssignmentMethod** I am changing the value of the **Sentence** property. Unlike the binding done before, which is limited to the scope, we are changing the value here for the life of the object, not the scope of the method.
 
-And here you have the exact reason why OO programmers don't know/don't care: Assignment and Binding use the same notation.
+And here you have the exact reason why OO programmers don't know/don't care: Assignment and Binding use the same notation (the *=* sign)
+
+Another example thsi time in Ruby. We are using the ExampleObject declared in the above Ruby code.
+{% highlight Ruby %}
+# Ruby
+class TheAssigner
+  attr_reader :example
+
+  def add_object(newObject)
+    @example = newObject
+  end
+
+  def modify_object(value)
+    @example.set_sentence value
+  end
+end
+
+assigner = TheAssigner.new
+
+example = ExampleObject.new "An Object"
+puts example
+
+assigner.add_object example
+
+puts assigner.example
+assigner.modify_object "Another value"
+puts assigner.example
+
+puts second
+{% endhighlight %}
+
+
+First, we create an **ExampleObject** outside of the **assigner** object. We give it a sentence of *An Object*. Then we pass the object to **assigner** and then, inside **assigner** we change the value of the sentence to *Another value*. Which we can check using outputting the value of the **example** inside **assigner**. But now if we look at our **example** object outside **assigner** we can see that the value remains changed.
+
+Again, assignment is for the lifetime of the entity.
 
 ### The FP way
 
-FP works differently. First, the main point of Functional Programming is immutability. Therefore assignment is a no, no from the get-go.
+FP works differently. First, the main point of Functional Programming is immutability. Therefore assignment is a no, no from the get-go. Of course, that means that you have to operate differently to achieve the same functionality. Not having assignment means that you can change values. It is not equal to being immutable, as you can mutate without assignment. But is a necessary part of it.
 
 #### Binding through function calls
-This basically looks the same.
+This basically looks the same as the OOP counterpart.
 
 {% highlight Fsharp %}
 // F#
@@ -187,7 +225,7 @@ x.Sentence <- "This is other"
 
 {% endhighlight %}
 
-See that F# uses a different symbol (<-) for assignment. There is never confusion. = is binding, and <- is assignment when allowed.
+See that F# uses a different symbol (<-) for assignment. There is never confusion. = is binding, and <- is assignment (when allowed).
 
 Elixir, though, no luck. You can't assign
 
@@ -212,6 +250,23 @@ end
 If you try to execute the above code it will complain the following error
 
 > (CompileError) structure.exs:10: cannot invoke remote function card.mana/0 inside match
+
+You can, though, create new structure changing some of the values like so:
+{% highlight Elixir %}
+# Elixir
+
+defmodule Card do
+	defstruct mana: 0, cost: 0
+
+	def tryToChange(card = %Card{}) do
+		IO.puts card.mana
+		card5 = %{card | mana: 5}
+		IO.puts card5.mana
+	end
+	
+end
+
+{% endhighlight %}
 
 ### Rebinding
 
@@ -265,7 +320,7 @@ public class Rebinder
 
 With the above you can rebind.
 
-FP languages are slightly divided over here. Some don't allow you to rebind at all, like Erlang. Some others, like Elixir and F#, do allow you to rebind, to make some more code readable. 
+FP languages are slightly divided over here. Some don't allow you to rebind at all, like Erlang. Some others, like Elixir, Clojure and F#, do allow you to rebind, to make code more readable. 
 
 {% highlight Elixir %}
 # Elixir
@@ -279,4 +334,10 @@ end
 
 Above we are binding x to the value 5, and then we rebind x to the value 7. The idea is that you don't need to create multiple variables to hold each binding.
 
+Of course, instead of rebinding we could use piping. Which we will see on another post.
+
 ### Conclusions?
+
+Is interesting the fact that binding and assigment have the same notation in OOP languages. Most fo the time, you don't care what happens. You are considering the variable rather than the object.
+
+Is important to know where that distinction is necessary (F#), otherwise not sure if it is. I think I need to think a bit more about it.
