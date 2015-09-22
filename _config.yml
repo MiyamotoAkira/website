@@ -6,6 +6,8 @@ description: Musings and rambling, and some code.
 
 url: http://twoormore.eu
 
+permalink: /blog/:year/:month/:title/
+
 defaults:
   -
     scope:
