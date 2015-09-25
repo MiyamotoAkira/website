@@ -3,6 +3,12 @@ title: Into Adventure - Part 1 - Binding and Assignment
 date: 2015-09-22 08:50:00
 ---
 
+
+##### updates:
+- Fixed issue with incorrect variable being called in a Ruby example 2015-09-24
+- Added missing set_sentence method 2015-09-25
+- Fixed indentation of Ruby and Elixir code 2015-09-25
+
 ### The starter
 
 This was a secondary idea while creating the presentation. Wasn't sure if I would add it to the presentation. But then realized that is a quite important concept. 
@@ -66,8 +72,8 @@ So, if we had:
 # Ruby
 
 def example()
-    x = 5
-    puts x
+  x = 5
+  puts x
 end
 
 {% endhighlight %}
@@ -82,19 +88,19 @@ Here is another example to drive the idea home better.
 # Ruby
 
 class ExampleObject
-	def initialize(sentence)
-		@sentence = sentence
-	end
-	def to_s
-		"#{@sentence}"
-	end
+  def initialize(sentence)
+    @sentence = sentence
+  end
+  def to_s
+    "#{@sentence}"
+  end
 end
 
 x = MyExample.new "This is a string"
 
 def print_value (y)
-	z = y
-	puts z
+  z = y
+  puts z
 end
 
 print_value x
@@ -138,6 +144,12 @@ And here you have the exact reason why OO programmers don't know/don't care: Ass
 Another example thsi time in Ruby. We are using the ExampleObject declared in the above Ruby code.
 {% highlight Ruby %}
 # Ruby
+class ExampleObject
+  def set_sentence(value)
+    @sentence = value
+  end
+end
+
 class TheAssigner
   attr_reader :example
 
@@ -161,7 +173,7 @@ puts assigner.example
 assigner.modify_object "Another value"
 puts assigner.example
 
-puts second
+puts example
 {% endhighlight %}
 
 
@@ -232,17 +244,17 @@ Elixir, though, no luck. You can't assign
 {% highlight Elixir %}
 # Elixir
 defmodule Card do
-	defstruct mana: 0, cost: 0
+    defstruct mana: 0, cost: 0
 end
 
 defmodule UseCard do
-	card = %Card{}
+    card = %Card{}
 
-	def tryToChange do
-		IO.puts card.mana
-		card.mana = 5
-		IO.puts card.mana
-	end
+    def tryToChange do
+        IO.puts card.mana
+        card.mana = 5
+        IO.puts card.mana
+    end
 	
 end
 {% endhighlight %}
@@ -256,14 +268,13 @@ You can, though, create new structure changing some of the values like so:
 # Elixir
 
 defmodule Card do
-	defstruct mana: 0, cost: 0
+    defstruct mana: 0, cost: 0
 
-	def tryToChange(card = %Card{}) do
-		IO.puts card.mana
-		card5 = %{card | mana: 5}
-		IO.puts card5.mana
-	end
-	
+    def tryToChange(card = %Card{}) do
+        IO.puts card.mana
+        card5 = %{card | mana: 5}
+        IO.puts card5.mana
+    end
 end
 
 {% endhighlight %}
@@ -326,9 +337,9 @@ FP languages are slightly divided over here. Some don't allow you to rebind at a
 # Elixir
 defmodule Test do
     def myMethod do
-	   x = 5
-	   x = 7
-	end
+        x = 5
+        x = 7
+    end
 end
 {% endhighlight %}
 
