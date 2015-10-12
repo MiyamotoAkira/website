@@ -35,11 +35,14 @@ One last warning: The only element of the ones that I'm going to show that is ex
 In chronological order:
 
 - [Binding And Assignment]({% post_url 2015-09-22-binding-and-assignment %})
+- [Chaining]({% post_url 2015-10-12-chaining %})
+
+
 
 
 ##### References
 
-[1]<a name="1"><a href="http://www.meetopia.net/virus/pdf-ps_db/ERayomd_How_To_Become_A_Hacker.pdf">How to become a Hacker</a></a>  <a href="return1">back up</a><br/>
-[2]<a name="2"><a href="http://paulgraham.com/avg.html">Beating the averages</a></a>  <a href="return2">back up</a><br/>
-[3]<a name="3"><a href="https://pragprog.com/book/btlang/seven-languages-in-seven-weeks">Seven languages in seven weeks</a></a>  <a href="return3">back up</a><br/>
-[4]<a name="4"><a href="https://vimeo.com/84676527">Functional Programming: What?Why?When?</a></a>  <a href="return4">back up</a><br/>
+[1]<a name="1"><a href="http://www.meetopia.net/virus/pdf-ps_db/ERayomd_How_To_Become_A_Hacker.pdf">How to become a Hacker</a></a>  <a href="#return1">back up</a><br/>
+[2]<a name="2"><a href="http://paulgraham.com/avg.html">Beating the averages</a></a>  <a href="#return2">back up</a><br/>
+[3]<a name="3"><a href="https://pragprog.com/book/btlang/seven-languages-in-seven-weeks">Seven languages in seven weeks</a></a>  <a href="#return3">back up</a><br/>
+[4]<a name="4"><a href="https://vimeo.com/84676527">Functional Programming: What?Why?When?</a></a>  <a href="#return4">back up</a><br/>
