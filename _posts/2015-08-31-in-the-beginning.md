@@ -27,7 +27,7 @@ Mind you, probably should get a designer to do the header a bit more ... fancy.
 
 ### Writing Style
 
-My style, I expect, will evolve as I write new posts. But I want to do describe a few idionsyncrasies of the how I will express myslef, because I don't think here will be a change onn them.
+My style, I expect, will evolve as I write new posts. But I want to do describe a few idionsyncrasies of the how I will express myslef, because I don't think here will be a change on them.
 
 As much as possible I will try to create thoughful posts, in which I put forth opinions derived and supported by facts and experience. Not all is measurable, but I will try to offer some kind of quantification where possible. Sometimes I will write a few opinions as absolutes. I will strongly believe in them. But I am not omniscient. I recognise the fallability of my thinking, and will change if enough support through facts and experience showed me that I were wrong.
 
