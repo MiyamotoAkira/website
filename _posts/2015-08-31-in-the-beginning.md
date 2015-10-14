@@ -35,4 +35,4 @@ Don't expect rants or trolling (in general). I prefer my writing to be level-hea
 
 ### Till Later
 
-And with this, I have to say "Next time, more". Hopefully, if you just arrived here, you will find intersting posts that will inform or entertaing you.
+And with this, I have to say "Next time, more". Hopefully, if you just arrived here, you will find interesting posts that will inform or entertain you.
