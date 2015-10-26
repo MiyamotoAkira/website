@@ -15,11 +15,13 @@ What is causing this current dissatisfaction with the dailies? Is it something i
 
 Now, I do not know the previous experience of the team with dailies. But mine has been quite positive in the past. I have seen first hand the power of the dailies, and I have used them to great advantage to move forward projects.
 
-So, what is different now? What is making them so unuseful?
+So, what is different now? What is making them so useless?
 
 ### The Scrum Definition
 
-First time that I encountered the dailies was when I learned Scrum. What has been done? What is going to be done? IS there any problems? Are the three questions on a daily. I've found that the first two can easily be answered with the panel that holds the tasks/user stories and you only have to ask the last question.
+First time that I encountered the dailies was when I learned Scrum. What has been done? What is going to be done? Is there any problems? Are the three questions on a daily. I've found that the first two can easily be answered with the panel that holds the tasks/user stories and you only have to ask the last question.
+
+That last question is what makes the daily important, on my view. Is the one specific moment when you say: "we have to take action", without being disruptive nor transforming anyone into a micro-manager.
 
 ### The System
 
@@ -33,14 +35,12 @@ If you manage to have single-day tasks, what are the benefits?
 
 ### The Benefits
 
-There is one major benefit: Visibility
+There are several benefits to the use of tasks and dailies.
 
 #### Visibility
 
 With dailies and single-day tasks it becomes much easier to see the project moving. Or stopping. Because the tasks are supposed to be done in one day at most, you can see the functionality come into life. You can see, as well, if one is taking more than a day, where we have blockers.
 I have used both digital tools (TFS) and manuals (whiteboard) to follow tasks. There is nothing like getting on front of that whiteboard once a day, everyone, and see what is going on. If you don't have that specific time where everyone looks at it, is quite easy for people to aboslutely ignore it.
-
-The above creates two additional benefits: Satisfaction and Un-blocking.
 
 #### Satisfaction
 
@@ -50,16 +50,26 @@ It is quite satisfying see your project come along. See how the tasks (and User 
 
 The other benefit is that is very easy to see what is blocking the advancement of the project. And, therefore ... often?, unblock it. You, or any other member of the team, will aks "Why this task hasn't been finished yet?" And based on the answer you will take the appropiate measures: get someone to help with the code, talk with another department to facilitate the task at hand, discard or delay the task, break the task into smaller pieces, ...
 
+#### Knowledge
+
+I have always found that forcing yourself to create single day tasks allows you to better understand what is going on with the system that you are developing. Tasks, unlike User Stories are not created from the point of view of the user, but from the one of the developer. Is there a database here that I need to create? Do I need extend an interface? Or create a new one? Do I have a business layer that I need to change? A UI? Is just a question of adding an Endpoint to my REST API?
+
+These questions, and others, will help you understand the innards of your system. And how the different parts are connected.
+
 #### The last one
-There is one additional benefit. Which I do like. Estimation is diificult. We, humans, have problems estimating. Have you ever seen a big building done on time and on budget? I have not, though hopefully somewhere there we can find it. That is after 7000 years of construction.
+There is one additional benefit. Estimation is difficult. We, humans, have problems estimating. Have you ever seen a big building done on time and on budget? I have not. Though, hopefully, somewhere out there we can find it. That is after 7000 years of construction. It is not a new field.
 
-I have used story points before. They are complicated, because you still need to give a number. They take time to correctly assert. Quite a few tries. And if you have not done a good job of getting the base (and I'm guilty of it) is difficult to rectify or stop balloning the estimates. Furthermore, the "experience" that you can use to reuse them at a later point is shaky. I believe it has to do with granularity.
+If we have problems estimating building construction how are we not going to have estimating software development? In the eyes of construction we are a newborn.
 
-Tasks are far more concrete. Very specific time frames. Very small. You can't go astray. Furthermore, task are much easier to reuse.  I believe they give you better traceability. It is much easier to go back in time to a user story done in the past, check the number of tasks and understand what was originally estimated, what was done, what was forgotten to add to the original estimate, and to 
+I have used story points before. They are complicated, because you still need to give a number. Because that number is a nebulous abstraction of difficulty. They take time to correctly assert. Quite a few tries. And if you have not done a good job of getting the base number correctly (and I'm guilty of it) is difficult to rectify or stop balloning the estimates. Furthermore, the "experience" that you can use to reuse them at a later point is shaky.
 
-### The Communication
+Tasks are far more concrete. Very specific time frames. Very small. You can't go astray. Furthermore, task are much easier to reuse.  I believe they give you better traceability. It is much easier to go back in time to a user story done in the past, check the number of tasks and understand what was originally estimated, what was done, what was forgotten to add to the original estimate, and to, therefore, extract learning for the future.
 
-There is one specific question about communication. There is a technical and a human side to it.
+### Communication
+
+There are issues with communication. Other than brain to brain, there is no perfect technique of passing information between people. As soon as we have to put down our ideas, through language, formulae or code imperfections will appear.
+
+But even if we could achieve perfect transmission of our ideas there are still issues.
 
 I have found that, if you have more than two people on a team, constant communication is just difficult. There are cases in which information is going to be shared between two people that will not reach the third, fourth or *n*th member of the team.
 
