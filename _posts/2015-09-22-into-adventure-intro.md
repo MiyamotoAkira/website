@@ -36,7 +36,7 @@ In chronological order:
 
 - [Binding And Assignment]({% post_url 2015-09-22-binding-and-assignment %})
 - [Chaining]({% post_url 2015-10-12-chaining %})
-- [State]({% post_url 2015-11-7-state %})
+- [State]({% post_url 2015-11-17-state %})
 - Pattern Matching
 - Classes vs Functions
 
