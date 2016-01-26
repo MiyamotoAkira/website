@@ -5,36 +5,35 @@ date: 2016-01-01 17:00:00
 
 ### Motivation
 
-Slashdot.org post.
+Recently there was a post in Slashdot.org post about [Code Reviews vs. Pair Programming](http://developers.slashdot.org/story/16/01/21/1749247/code-reviews-vs-pair-programming#comments). I was surprised at the actual derision of pair programming. They speak from an experience completely separate to mine. Do read the original blog post by Mr Rayala, where he shows the upsides and downsides of [Code Review vs. Pair Programming](https://blog.mavenhive.in/pair-programming-vs-code-reviews-79f0f1bf926#.pxega8tjp)(post in medium) as he sees them.
 
-### The
+But now, is time to talk a bit about my experience.
 
-I read Extreme Programming Explained, by Kent Beck, when I was at University. Nothing of what he wrote on it was explained at University. Nothing about test, nor tight feedback loops with the client, nor any of the rest.
+### The root
 
-There are ideas that I tend to latch into, and will remember them at a later point (usually some years later) and will try to act upon them. XP has been one of them.
+I read [Extreme Programming Explained: Embrace Change](http://www.amazon.com/Extreme-Programming-Explained-Embrace-Edition/dp/0321278658/), by Kent Beck, when I was at University. Nothing of what he wrote on it was explained at University. Nothing about test, nor tight feedback loops with the client, nor any of the rest.
+
+There are ideas that I tend to latch into, and will remember them at a later point (usually some years later) and then I will try to act upon them. XP has been one of them.
 
 ### The first graduate job
 
-After finishing University I joined DSI (which changed then the name to DSICmm, then Innovative Output Solutions and finally become DST UK). The job that started doing there had the benefit that I was exposed to very rapid feeback loop with the clients. You could send proofs a few times a day, depending on the job. The stark difference with my previous job was quite stark. It was very easy.
+After finishing University I joined a company called DST Output UK (after a few merges and a few changed names). The job I that started doing there had the benefit that I was exposed to very rapid feeback loop with the clients. You could send proofs a few times a day, depending on the job. Compared to previous jobs (back in Spain), where I wouldn't get any kind of feedback for a few months, it was stark. I discovered that yes, quick feedback loops (ok, they can be slightly longer, say two weeks **wink, wink**), did improve the speed at which I was able to deliver the correct program.
 
-Continuous Integration
+As time passed, I joined what we called the platform team, where the job was a bit more like I would expect. There I started to realize that there were other things on xp that could benefit greatly what we were doing: Tests, Continuous Integration, small schedules, .... Once I had the opportunity, we started using them.
 
-Tests
+But there was one that I couldn't practice: Pair Programming. It was, well, it is, by far, the most difficult proposition to sell of all the principles outlines on Kent Beck's book. All the other principles they did create good value, reducing bugs, improving speed of delivery and creating better code. Why then, not try that last principle?
 
-Daily?
+Well, in fact, I have (and probably you have as well) tried it a bit, while debugging. Haven't you called a colleague when you can't find the issue with some code, when there is a hotfix that needs to be deployed as quickly as possible. I do like to find the issues myself, but the ego has to be put aside when a production issue comes around.
 
-But there was one that I couldn't practice: Pair Programming.
+### The chance
 
-### My current work
+Currently, I'm working with a small team, where we tend to sit (or remote) together some times. So far, I have found that is easier to iterate through different approaches to a problem, that is easier to concentrate on problems (especially those that wouldn't be interesting to me), and that the distribution of knowledge is much simpler and quicker. One additional benefit, is easier to stop the Cowboy programmer. I do expect to increase the amount of time that we spend pair programming.
 
-After a bit of being in a nebulous?? position I become more integrated with one of our API teams. There, I have started to finally use some pair programming.
+### What about Code Review?
 
-### My findings
+Keep doing it. We do, in fact, get code reviews from the "free" member. Is easy to fall into Hive mentality while coding, so that additional set of eyes to make sure that what we do actually makes sense (you know [WTFs/minute](http://www.osnews.com/story/19266/WTFs_m))
 
-Pros:
-Easier to concentrate for longer on the task.
 
-Cons:
+### Conclussions?
 
-### The people against it
-
+Try it, if you haven't done it before. Force yourself for a couple of hours a day. Changing keyboard driver every half hour or so. And then decide for yourself if it fits your team. I think it fits mine.
