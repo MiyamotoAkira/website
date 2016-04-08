@@ -5,21 +5,21 @@ date: 2016-03-03 23:00:00
 
 ### Setup
 
-A few days ago, I made a presentation about using layers vs features as a way to structure code at my work place. I have originally seen the idea on this <a href="">presentation</a> of NDC Oslo by XXX. It was one of these ideas that immediatly made the tiny bulb on my head go on.
+A few days ago, I made a presentation about using layers vs features as a way to structure code at my work place. I have originally seen the idea on this <a href="https://vimeo.com/131633177">presentation</a> of NDC Oslo by XXX. It was one of these ideas that immediatly made the tiny bulb on my head go on.
 
-Of course, I played a bit around and made my own presentation to understand how this works (I like using the preparation of presentation/tutoring to force myself to acquire better knowledge). You can find the presentation at <a href="http://github.com/MiyamotoAkira/featuresvslayers.git">my github account</a>. This post, then, is a companion/rehash to it.
+Of course, I played a bit around and made my own presentation to understand how this works (I like using the preparation of presentation/tutoring to force myself to acquire better knowledge). You can find the presentation at <a href="https://github.com/MiyamotoAkira/FeaturesVsLayers">my github account</a>. This post, then, is a companion/rehash to it.
 
 ### The issues with layers
 
-You have to understand here that most of my work has been done, so far, on C#, a static language. When I say project, you can consider it a module, or a library, in another language.
+You have to understand here that most of my work has been done, so far, on *C#*, a static language. When I say project, you can consider it a module, or a library, in another language.
 
 The most common way (at least on my experience) to do layer separation is to create separate csproj files. One per layer. Then you point from one to the other. This has some major consequences: 
 
-- first: The amount of interfaces that proliferate is massive if you try to follow <a href="http://wikipedia.org/SOLID">SOLID</a> closely
+- first: The amount of interfaces that proliferate is massive if you try to follow <a href="https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)">SOLID</a> closely
 - second: If you need to modify interfaces and implementations of code that affect parts of the system that shouldn't be touched.
 - third: If a specific flow doesn't need a layer either you need to add an additional reference to the layer below, or you create some dummy code to just pass the information.
 
-Verbosity is a problem on static OO languages without Type Inference. Furthermore, you have to be careful about what interfaces you create if you follow <a href="http://wikipedia.org/SOLID">SOLID</a>. You can use delegates instead of interfaces. If you declare the delegates to give them a name, you achieve the same as interfaces with a single method. You barely reduce the verbosity. If you are use dynamic languages, the problem dissapears.
+Verbosity is a problem on static OO languages without Type Inference. Furthermore, you have to be careful about what interfaces you create if you follow *SOLID*. You can use delegates instead of interfaces. If you declare the delegates to give them a name, you achieve the same as interfaces with a single method. You barely reduce the verbosity. If you are use dynamic languages, the problem dissapears.
 
 The second and third points are a reflection of using layers to architecture your system. Which, the more I use, the less correct it appears to me.
 
@@ -45,4 +45,4 @@ One issue that you will find is that you go very granular  (in case of kind-of-R
 
 **Suitability**
 
-What about working on other projects, let's say a desktop GUI application? Will it make sense to use features there? I haven't tried it yet. So I couldn't say. I am interested on trying to get something done with WCF or Kivy to see how it goes.
+What about working on other projects, let's say a desktop GUI application? Will it make sense to use features there? I haven't tried it yet. Hence, I couldn't say. I am interested on having a go in WPF or Kivy to see how it goes.
