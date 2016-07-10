@@ -1,6 +1,7 @@
 ---
 title: Wat Weirdness
 date: 2016-04-15 11:30:00
+excerpt: A couple of behaviours that seems strange (erlang and java).
 ---
 
 ### Wat

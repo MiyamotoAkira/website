@@ -1,6 +1,7 @@
 ---
 title: In The Beginning
 date: 2015-08-31 17:30:00
+excerpt: This site, the why, the what, the how
 ---
 
 ### My own website.

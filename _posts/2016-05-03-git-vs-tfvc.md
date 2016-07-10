@@ -1,6 +1,7 @@
 ---
 title: Things that I can do on git that are a pain (or impossible) on tfvc
 date: 2016-05-03 23:40:00
+excerpt: There are a few things that are possible on Git that are not allowed by TFVC. Here I will show some of those behaviours.
 ---
 
 ### The Setup

@@ -1,6 +1,7 @@
 ---
 title: No factory
 date: 2015-08-31 17:32:00
+excerpt: I do have a dislike of the factory and factory method patterns. Mostly because I have abused them. Thanks to lambdas in C# you can skip them on simple casses. 
 ---
 
 ### The Basics

@@ -1,6 +1,7 @@
 ---
 title: Into Adventure - Part 1 - Binding and Assignment
 date: 2015-09-22 08:50:00
+excerpt: A small introduction to binding and assignment, a couple of operations that are usually conflated on OOP languages. On FP languages you need to understand the difference between them.
 ---
 
 

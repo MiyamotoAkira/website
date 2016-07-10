@@ -1,8 +1,9 @@
 ---
 title: Into Adventure - Intro And Contents
 date: 2015-09-22 08:45:00
+excerpt: Once you get into Functional Programming languages you are going to find a few new concepts and ideas that you have to take into account. This is the hub from which you can access to posts related to these new concepts.
 ---
-
+ 
 ### What is this?
 This, and a a number of other posts that will follow, have come about after starting a presentation called "Into Adventure - moving from Object-Oriented Programming (OOP) to Functional Programming (FP)". They are an expansion of the ideas and points of the talk.
 
