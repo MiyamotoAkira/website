@@ -1,6 +1,7 @@
 ---
 title: Dailies and Tasks
 date: 2015-10-26 23:00:00
+excerpt: There is nothing like a good discussion to revise and try to understand the process that is being used on your company/team. Dailies was the subject of the latest one, and here are some thoughts about it.
 ---
 
 ### The Setup

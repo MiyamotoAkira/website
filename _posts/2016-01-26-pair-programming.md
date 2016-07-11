@@ -1,6 +1,7 @@
 ---
 title: Pair Programming
 date: 2016-01-26 11:42:00
+excerpt: I love pair programming. Haven't used as much as I would like to, though. Some history here (pair programming and mine) that lead me into it.
 ---
 
 ### Motivation
