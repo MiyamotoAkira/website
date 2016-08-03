@@ -16,7 +16,7 @@ body {
 
 .disclaimer {
 	text-align: center;
-	max-width:30em;
+	max-width: 30em;
 }
 
 .logo {
@@ -25,10 +25,13 @@ body {
 	float:left;
 }
 
+.logo img {
+	border-radius: 20px;
+}
+
 .message {
 	display:inline-block;
 	vertical-align: middle;
-	margin-right:10;
 	float:right;
 }
 
@@ -54,7 +57,7 @@ body {
 	display: table;
 	width: 100%;
 	text-align:center;
-	border-radius: 0px 0px 20px 0px;
+	border-radius: 20px;
 }
 
 .license {
