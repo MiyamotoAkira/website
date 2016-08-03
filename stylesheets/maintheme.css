@@ -33,6 +33,7 @@ body {
 	display:inline-block;
 	vertical-align: middle;
 	float:right;
+	margin: 10px;
 }
 
 .title {
