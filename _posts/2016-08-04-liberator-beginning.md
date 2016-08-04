@@ -1,12 +1,14 @@
 ---
 title: Clojure, Liberator and Emacs
-date: 2016-08-03 22:00
+date: 2016-08-04 09:00
 excerpt: A quick recount of my current state trying to get a rest API working using Liberator.
 ---
 
 ### The Background
 
-I like creating good simple solutions to problems. Most of the time is difficult because I work on code already written and working, and is difficult to break those monoliths into something more appropriate. I don't think certain languages help on that regard. I wish the whole .Net world moved to F# just because of the impossibility of creating circular dependencies inside a library. How annoying is that. At my previous work it kind of fell on me the need to setup the rules to create REST APIs, as our new Dev Director wanted to move into the direction of SOA. It was interesting because I have no previous experience, and as far as I could gather, no one else on the company had (later on, some clever people that worked with the Dev Director before, came to the company). So a "Rest in Practice" book and a few videos later, I actually had a basic idea of what I was doing. And I loved it. The easiness of doing separation of concerns without the possibility of creating very dependent monsters was amazing. Furthermore, it made very easy for teams to work fully independent of each other (as long as the contract was respected, of course). REST APIs are not appropriate for all systems, though. Sometimes, a Majestic Monolith (TM DHH) is what you actually need. Sometimes what you want are channels. Sometimes, is something else.
+I like creating good simple solutions to problems. Most of the time is difficult because I work on code already written and working, and is difficult to break those monoliths into something more appropriate. I don't think certain languages help on that regard. I wish the whole *.Net world* moved to [F#](http://fhsarp.org) just because of the impossibility of creating circular dependencies inside a library. How annoying is that.
+
+At my previous work it kind of fell on me the need to setup the rules to create REST APIs, as our new Dev Director wanted to move into the direction of SOA (ok, I was looking for a revamp of our system, so I kind of put a foot forward). It was interesting because I have no previous experience, and as far as I could gather, no one else on the company had (later on, some clever people, that worked with the Dev Director before, came to the company). So a "Rest in Practice" book and a few videos later, I actually had a basic idea of what I was doing. And I loved it. The easiness of doing separation of concerns, reducing the possibility of creating very dependent monsters is amazing. Furthermore, it made very easy for teams to work fully independent of each other (as long as the contract was respected, of course). REST APIs are not appropriate for all systems, though. Sometimes, a Majestic Monolith (TM DHH) is what you actually need. Sometimes what you want are channels. Sometimes, is something else.
 
 ### The Language
 
@@ -14,7 +16,30 @@ I love [Clojure](http://clojure.org/). I am not as proficient with it as I shoul
 
 ### The Framework/Library
 
-I have read before that on Clojure you have libraries that you use rather than frameworks. [Liberator](http://clojure-liberator.github.io/liberator/) provides a specific flow of actions to be taken but is actually a library, not a framework and, therefore, does the one thing, and the rest is up to you. It was created based on Ring, which is the de-facto standard htpp library on Clojure. Other than that you are free to use whatever you want to create your API. Freya is trying to do something similar on the F# space. My first two attempts on it have been pure disasters, but keep learning new things, and I'm starting to believe that for the quick creation of a REST API is superb (definitely much quicker than trying to use WebAPI on .Net).
+I have read before that on Clojure you have libraries that you use rather than frameworks. [Liberator](http://clojure-liberator.github.io/liberator/) provides a specific flow of actions to be taken but is actually a library, not a framework and, therefore, does the one thing, and the rest is up to you. It was created based on Ring, which is the de-facto standard htpp library on Clojure. Other than that you are free to use whatever you want to create your API. Freya is trying to do something similar on the F# space. My first two attempts on it have been pure disasters, but keep learning new things, and I'm starting to believe that for the quick creation of a REST APIs is superb (definitely much quicker than trying to use WebAPI on .Net). The way that resources are defined makes it very easy to follow all the possible options that will happen to it.
+
+Look at this example from the Liberator page:
+
+{% highlight Clojure %}
+(defresource entry-resource [id]
+  :allowed-methods [:get :put :delete]
+  :known-content-type? #(check-content-type % ["application/json"])
+  :exists? (fn [_]
+             (let [e (get @entries id)]
+                    (if-not (nil? e)
+                      {::entry e})))
+  :existed? (fn [_] (nil? (get @entries id ::sentinel)))
+  :available-media-types ["application/json"]
+  :handle-ok ::entry
+  :delete! (fn [_] (dosync (alter entries assoc id nil)))
+  :malformed? #(parse-json % ::data)
+  :can-put-to-missing? false
+  :put! #(dosync (alter entries assoc id (::data %)))
+  :new? (fn [_] (nil? (get @entries id ::sentinel))))
+  
+{% endhighlight %}
+
+I think that the above code makes quite clear what are the possible things happening to the resource. You still need to learn the order on which the actions are being handled but, on their page, Liberator provides an svg with the diagram of decisions.
 
 ### The IDE
 
