@@ -4,15 +4,15 @@ date: 2016-05-03 23:40:00
 excerpt: There are a few things that are possible on Git that are not allowed by TFVC. Here I will show some of those behaviours.
 ---
 
-### The Setup
+## The Setup
 
 One week ago I got into a discussion on why someone would move from TFVC to Git. On a instinct level, I know that Git is the far better option. But the question put forward was why it was better. Does it improve productivity? It is difficult to put numbers on this. How you calculate productivity? How do you calculate how does it affect productivity? I have not found any one giving any kind of statistics.
 
 I only have few numbers to offer, though I can show quite a few possibilites that are available on Git, but not on TFVC (I haven't found anything that is available on TFVC that you couldn't replicate with Git). The other thing that I can talk about, is that introduces some changes on the programming culture regarding branches and commits
 
-### The Comparison
+## The Comparison
 
-#### The Core
+### The Core
 
 As its core, this about comparing a CVCS against a DVCS: full consistency against eventual consistency, always online vs online on demand. Some of the differences that you will see over here are based on those two reasons. But are not the only ones (see below for the differences in approach). One of the biggest differences is having the Team Project as the root of everything on TFVC vs having the commit as the center of all work on Git.
 
@@ -22,7 +22,7 @@ Git was originally designed to satisfy the needs of Linux Kernel development. It
 
 There is a bit more of workspaces talk [here](#workspaces)
 
-#### Usage
+### Usage
 
 TFVC seems to have been originally designed to be used on Visual Studio. I know of only one other person that me that has used the command line at all. With TFVC, if you use the SourceControl explorer and commands inside Visual Studio, all changes will be recognised. Trying to use the command line is a bit more complicated. First, it doesn't get installed by default on the path. You either invoke the developer command prompt or add it into your path. Furthermore, you will need to run for some commands on an elevated prompt (I though maybe it was something related to being a centralized system, but then, that is why you have credentials). Changes that you do on the file system will not be recognised. TFVC will not show you that those changes have taken place in the command line (though if you are using a Local Workspace Visual Studio will show them). Of course, as long as you are dealing exclusively with Visual Studio projects, it will know which files needs to keep track of, and which not. If you have to deal with non-VS solutions ... it becomes more complicated.
 
@@ -31,7 +31,7 @@ Git was designed to be used from the command line and to have an involved relati
 A small interesting point, TFS will be happy to track empty folders. Git, on the other hand, only register files, and their path, so an empty directory will not be acknowledged by Git.
 
 
-#### Changes
+### Changes
 
 Centralized vs Distributed make a big difference to the way that changes are recorded. Because on the centralized architecture of TFVC the commit goes immediately to the server it cannot be modified. Comments can be modified, but the changeset itself is absolutely immutable. Of course, they could have still chosen to allow some way to modify the changeset. 
 
@@ -48,7 +48,7 @@ Git does instead allow you to modify commits. First time I came across this I di
 
 First number I can give comes here. When trying to undo pending changes on your code, TFVC will need to contact the server. I usually see timings north of 5 seconds, with 10 not being unusual. Git, on the other hand, as it only has to deal with it on the computer where you are working, does that well below 2 seconds. In fact, even on Local Workspace, with TFVC you need to keep calling the server constantly, which means that for every operation there is a small delay.
 
-#### Searching for information
+### Searching for information
 
 There are a few advanced scenarios for information retrieval that you can do on Git that I haven't found possible on TFVC.
 
@@ -60,7 +60,7 @@ There are a few advanced scenarios for information retrieval that you can do on 
 
 	Very unfortunate name (does it has anything to do with the type of person Linus is?). With [git blame](https://git-scm.com/docs/git-bisect) you can get the name of the last person to modify every single line of code. Git, being what it is, has alternative ways to find it, throught the use of the multiple options of log.
 
-#### Workspaces
+### Workspaces
 
 This is a concept of TFVC. A workspace is a collection of folder/branches mapped to local folders. A workspace is linked to a single combination of machine/username. The local folder can only be mapped to a single workspace. If your computer blows up, TF will still have the workspace linked. If the machine is redone with the same name, then you will not be able to remap, because there is a mapping already there. If you are given the machine of another person, that person didn't remove its mappings and you are using a common structure (antivirus purposes, standarization), you can not do your own mapping, you will need an admin to delete the previous person workspace. 
 
@@ -71,7 +71,7 @@ I must talk about both type of workspaces here. Server workspace keeps the full 
 Git, because it doesn't use have centralized information, doesn't care. You can have multiple downloaded copies of the same repository. More important is the fact that if something goes wrong with your mapping, because it is not registered anywhere, there will be no issue. Download/Clone and move on. There is no lock. You will end having degradation of performance with a big repo size (on the Gbs of data). Chosing the right segmentation of repos does help on never encoutering the problem (I haven't work on a system big enough to introduce any significative delay).
 
 
-#### Branches
+### Branches
 
 Conceptually, I think this is where the different approach tilts massively the balance in favor of Git. Branches on a more flexible, lightweight constructs, that what you find on TFVC. In fact, a branch is just a pointer to a commit. Branches on Git are, in its concept, shortlived, though you can leave branches actives for long periods of time. Branches on TFVC are more involved, requiring new entries into the Sql Server backing TFVC. Furthermore, branches on TFVC are perennial. You can't fully delete branches, they are just marked as non-visible. One last important point: On Git, all branches, because they are just points to commits, are connected. It is the famous DAG (directed acyclic graph) of Git, which allows for some advanced scenarios. On TFVC branches are completely separated entities, with an initial point that is common, but their history is completely separated once the branching happens (though there is some linking once you do a merge).
 
@@ -87,7 +87,7 @@ Conceptually, I think this is where the different approach tilts massively the b
 
 	Baseless merge (which are merges between branches that are no related on first degree) are sometimes needed. On TFVC, the general recommendation is don't. Because changesets on different branches are not related, TFVC has to do far more to try to merge two branches. On Git, though, they are not problematic, as the DAG will be easy to traverse and check what are the differences between the branches. To help things even further the [git cherry-pick](https://git-scm.com/docs/git-cherry-pick) command will allow you to select which commits from one branch you want to apply to another branch without going through a merge. 
 
-#### Reviews
+### Reviews
 
 Because of the way that TFVC works, code reviews are done on changesets (which they could be the ones done on your special branch, or on your main branch after a merge). If there is any issue, you need to create a new changeset with the change, and then start a new code review. This form of code reviews is slow, confusing and wasteful.
 
@@ -95,7 +95,7 @@ Git doesn't indicate, as far as I know, how to do code reviews. But the concept 
 
 Stopping your work to do code reviews for another developer is a costly context switch. Having a flow that makes it easier, eliminates some of the pain.
 
-#### Exploratory coding/refactoring
+### Exploratory coding/refactoring
 
 And here the difference shows the most, on my view (the length of the section is not proportional to the importance). All the different things that I have mentioned before (plus a few others) means that any kind of exploratory coding or refactoring is much easier with Git. I can jump back and forth my working branch and my refactoring branch. I can easily merge them together if I think it is worthy. I can keep track of history while sharing with others.
 
@@ -103,7 +103,7 @@ I'm more reticient to do this kind of exploratory work on TFVC. And, when I do, 
 
 I cannot put numbers over here. I cannot specify my productivity has gone up X. I can say that it does go up, and it is not marginal.
 
-### Cost
+## Cost
 
 What is the cost associated with moving from TFVC to Git? If you stay inside TFS, there are only two costs: both involve time.
 
@@ -115,7 +115,7 @@ Maybe you want to automatise the transfer of your collections. VSO has a Rest AP
 
 You have to be careful, though, regarding branches. On TFVC there are completely separate entities. So you will be migrating a single branch into a Git repo. You will want that to be your main branch, and probably do it at a point in which there are no active branches on development. You could still fiddle your way around the current branches, adding their files to a new branch of your git repo. Because git tracks files, it will be able to detect changes introduced in them and add them, though this way you could loose some history from th TFVC branch.
 
-### Conclusion
+## Conclusion
 
 Git provides far more flexibility and power than TFVC. Although you will want to plan your migration, I believe that your development process will improve through the use of Git
 

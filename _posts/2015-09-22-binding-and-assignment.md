@@ -10,28 +10,28 @@ excerpt: A small introduction to binding and assignment, a couple of operations 
 - Added missing set_sentence method 2015-09-25
 - Fixed indentation of Ruby and Elixir code 2015-09-25
 
-### The starter
+## The starter
 
 This was a secondary idea while creating the presentation. Wasn't sure if I would add it to the presentation. But then realized that is a quite important concept. 
 
 The difference between binding and assignment didn't cross my mind until I was forced on FP to live without the latter. Some hybrid FP languages (like F#) allow you to use assignment, but shouldn't be your default option if you want to actually do proper functional programming.
 
-### What is binding?
+## What is binding?
 Binding is assigning some piece of code or data with a name, an identifier. The point of binding is to be able to easily use that piece of code or data inside the scope where the binding is used.
 
 The key points in the previous paragraph are identifier and scope. The former is about being easily able to use that piece of code or data. The latter indicates that the identifier only lives inside the scope where the identifier has been declared.
 
-### What is assignment?
+## What is assignment?
 Assignment is to change the value of data. The data is changed for the lifetime of the container of the data (that be a record, structure, object or collection).
 
 To reiterate: Is a change for the full lifetime of the entity that you are changing. It is not limited by scope.
 
-### The OOP way
+## The OOP way
 As I just mentioned, there is no clear separation on OOP languages between asignment and binding. Both things are mostly conflated into assignment. And then you don't think of the cases where is clearly binding. Now if you are into the theory of computing, you will already know the difference. But, for all OO programmers that I know personally, there is no difference.
 
 We are going to work through some code to see differences between each other.
 
-#### Binding through method calls
+### Binding through method calls
 First is the binding that is a binding, even if you don't call it that.
 
 {% highlight C# %}
@@ -55,7 +55,7 @@ public class MyExample
 
 Above, what we are doing is, during the duration of the method, we bind *5* to **number**, and we bind *"This is a string"* to **sentence**. Once we leave the method, the names **number** and **sentence** dissapear. Yet the data that were representing (*5* and *This is a string*) do still exists, until the MyCallerMethod goes out of scope and they get eliminated by the GC (ok, not completely true regarding their lifetime, but we will leave it simplified like that)
 
-#### Binding inside a method/class
+### Binding inside a method/class
 But you have seen already a different way of binding in that example. Which is the way that you bind inside a method.
 
 {% highlight Ruby %}
@@ -111,7 +111,7 @@ puts x
 
 Above we are binding the object MyExample to x, then to y when calling print_value, then to z inside print_value. Once we leave print_value, y and z dissapear. But x and the object do still exists. We are binding inside a scope, y and z in the scope of print_value, x in the global scope.
 
-#### Assignment inside a method
+### Assignment inside a method
 So the question, is then, how do we do assignment? Remember assigning is changing the value of some data.
 
 {% highlight C# %}
@@ -182,11 +182,11 @@ First, we create an **ExampleObject** outside of the **assigner** object. We giv
 
 Again, assignment is for the lifetime of the entity.
 
-### The FP way
+## The FP way
 
 FP works differently. First, the main point of Functional Programming is immutability. Therefore assignment is a no, no from the get-go. Of course, that means that you have to operate differently to achieve the same functionality. Not having assignment means that you can change values. It is not equal to being immutable, as you can mutate without assignment. But is a necessary part of it.
 
-#### Binding through function calls
+### Binding through function calls
 This basically looks the same as the OOP counterpart.
 
 {% highlight Fsharp %}
@@ -201,7 +201,7 @@ myMethod 5 "This is it"
 
 On the code above we are declaring a function called myMethod to which we are going to pass a couple of values. During the duration of the function call we are using the names number and sentence instead of the values.
 
-#### Binding inside a function
+### Binding inside a function
 
 But what about binding inside functions?
 
@@ -213,7 +213,7 @@ let myMethod2 () =
 
 Again, quite similar to what we have done before.
 
-#### Assignment inside a function
+### Assignment inside a function
 But what about assignment?. Well, if it is something immutable, you can't. Which, again, is the default behaviour. Elixir, doesn't allow you to. Clojure, has no mutable local variables, and special cases for interoperability through the JVM (Ref and Agent). F# allows you to create mutable values, and anything that comes from C# is mutable.
 
 {% highlight C# %}
@@ -280,7 +280,7 @@ end
 
 {% endhighlight %}
 
-### Rebinding
+## Rebinding
 
 Now this is an special case. All OOP languages allows you to rebind a variable that has been declared in method, or, in fact, in an object
 
@@ -348,7 +348,7 @@ Above we are binding x to the value 5, and then we rebind x to the value 7. The 
 
 Of course, instead of rebinding we could use piping. Which we will see on another post.
 
-### Conclusions?
+## Conclusions?
 
 Is interesting the fact that binding and assignment have the same notation in OOP languages. Most fo the time, you don't care what happens. You are considering the variable rather than the object.
 

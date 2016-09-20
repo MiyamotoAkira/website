@@ -8,19 +8,19 @@ tags:
 - Liberator
 ---
 
-### Weeeeeeee!
+## Weeeeeeee!
 
 Finally my first working [Liberator](https://clojure-liberator.github.io/liberator/) project. You can find the code [here](https://gist.github.com/MiyamotoAkira/042dae266584936d8c56a8933158de6a). The rest is just adding the correct dependencies and plugins into your project.clj
 
 So, why so happy? The Liberator documentation doesn't make it easy to understand a few elements. I think their documentation stands to improve a little, and will be communicating with them about it. Some of it I think it is due to me not being profficient enough on Clojure (which could mean other starters could have the same issues). Because I have been just dabbling in Clojure for a while, I have not internalized yet the mind mapping and the grammar of the language. But on it I am.
 
-### The program
+## The program
 
 The program is a very easy API. It allows you to add the body-contents from the incoming JSON into a collection, and then retrieve all the data that you have added into the collection.
 
 The important fact about the program is that I have tried to write the absolute minimum for an endpoint that will admit some json on the body of a POST request. There is nothing else in there. No data validation, no authorization, no external storage. I did think about being a little more clever with the `post!` function, but then I though I would loose some readability.
 
-### The code
+## The code
 
 I will explain top to bottom to understand what is going on. You will see how uncomplicated is. 
 
@@ -48,7 +48,7 @@ I do prefer to keep (at least at the moment) the verb check with the resource. S
 
 `io` and `json` are used to read and write json from the request and into the response. They are standard libraries for Clojure.
 
-### The meat of the code
+## The meat of the code
 
 Then the code goes:
 
@@ -85,7 +85,7 @@ As you can see, what I'm defining on the resource is a collection of key/value p
 
 `:post!` is an action that will be executed when the POST verb is the action used on the request. Like `:handle-ok` above a function that receives the context of the call will be used. What I'm doing here is quite simple. We first retrieve the body of the request, then we convert it into a string and finally we transform it into a map. If you are new to Clojure or using json in clojure you have to pay attention to the keyword `:key-fn` used on the `json/read-str` function call. `key-fn` will receive a function. On this case we are passing a predifined function called `keyword`. Is this function that will convert the json read into a map with the field names as keys. Finally, we are just using the semantics of ref to add whatever the contents are (on this case name) to the appointments collection. Finally, we just alter the appointments vector to add the new data.
 
-### Making it all available
+## Making it all available
 
 Next step that we have is the route definition
 
@@ -110,10 +110,10 @@ Finally, we just call the app route definition from
 
 The only special thing that we are doing is adding the tracers. `:ui` will produce html on the response if there has been an exception throw in your application. If no exception is raised, `:header` will add two liberator headers to the response: *X-Liberator-Trace-Id*, which will show the id given to the request; and *X-Liberator-Trace* in which it will show all the decisions taken and their result, which is quite nice to use to debug why something has not been executed as expected.
 
-### The results of the calls
+## The results of the calls
 
 If you call the endpoint */appointments* with a POST request with body **{"name": "jorge"}** a result of 201 plus a filled *X-Liberator-Trace* should be returned. If you then call GET, then a 200 with body response of **[{"name": "jorge"}]** should be returned.
 
-### Conclusion
+## Conclusion
 
 Again, a very simple example of Liberator with GET and POST requests. Enough to understand the basic concepts of Liberator, and build on top of it. And also to understand how easy it makes the creation of APIs.

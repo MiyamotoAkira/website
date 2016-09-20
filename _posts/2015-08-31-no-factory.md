@@ -4,7 +4,7 @@ date: 2015-08-31 17:32:00
 excerpt: I do have a dislike of the factory and factory method patterns. Mostly because I have abused them. Thanks to lambdas in C# you can skip them on simple casses. 
 ---
 
-### The Basics
+## The Basics
 
 I dislike boilerplate code. Every single piece of code that you need to write because the language forces you to do it, not because it helps solving your problem is a waste of time. Why should you be using time creating boilerplate code, when you could have finished the issue at hand? On the Toyota original Lean process all that boilerplate is Muda. And should be eliminated. Sometimes IDE tools allow you to easily create that boilerplate. But still, is a waste that you need to mantain. Ideally, that boilerplate shouldn't exist.
 
@@ -16,7 +16,7 @@ Just recently I've seen a QCon keynote from 2013 by Greg Young <a name="return1"
 
 Darn it, I say.
 
-### The Code
+## The Code
 
 The below is some very simple code that I created to test that "factory" ability with constructor parameters.
 

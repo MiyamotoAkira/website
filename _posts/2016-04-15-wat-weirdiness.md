@@ -4,15 +4,15 @@ date: 2016-04-15 11:30:00
 excerpt: A couple of behaviours that seems strange (erlang and java).
 ---
 
-### Wat
+## Wat
 
 A few days ago I saw this video by Gary Bernhardt titled <a href="https://www.destroyallsoftware.com/talks/wat">Wat</a>. It is a funny take on some quirkiness (mostly) of Javascript. Ok, I wouldn't call all of them quirky, some are rather bad design. They create inconsistent behaviour. Of course you can learn all the quirkiness, but you shouldn't need to. That is why, as well, C++ seems to me that can only be used by very good developers with very strict coding guidelines. Otherwise you could create the same scenarios as we see on JS.
 
-### Erlang
+## Erlang
 
 Recently I discovered that Erlang has a difference between **=:=** and **==**. It doesn't seems as marked as the different of **==** and **===** is in JS. Right now not seeing the point, but maybe I need to work a bit more with it (I've just started with Erlang). Maybe is because is a dynamic language.
 
-### Java
+## Java
 
 I believe that C# is the much better language than Java. Since 2.0 it has provided far better constructs for creating good readable code than Java. Now with dnx maybe .Net will get more use outside of Windows machines. I have been relatively happy as a C# developer (although there are better languages).
 

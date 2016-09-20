@@ -4,7 +4,7 @@ date: 2015-08-31 17:30:00
 excerpt: This site, the why, the what, the how
 ---
 
-### My own website.
+## My own website.
 
 It was about time that I put some effort into it. Well, not much as of this writing, as it just this very simple blog.
 
@@ -12,7 +12,7 @@ I think. I think a lot. I think my own thoughts. I think about other people's th
 
 And that is why this website is here.
 
-### The Tech
+## The Tech
 
 In terms of technology, I have decided to use Jekyll for this website. There are a couple of  reasons for it. Which, of course, I will procceed to enumerate. What is the point otherwise?.
 
@@ -26,7 +26,7 @@ Will I add anything fancy into the website? Bootstrap? Angular? Any other fancy 
 
 Mind you, probably should get a designer to do the header a bit more ... fancy.
 
-### Writing Style
+## Writing Style
 
 My style, I expect, will evolve as I write new posts. But I want to do describe a few idionsyncrasies of the how I will express myslef, because I don't think here will be a change on them.
 
@@ -34,6 +34,6 @@ As much as possible I will try to create thoughful posts, in which I put forth o
 
 Don't expect rants or trolling (in general). I prefer my writing to be level-headed.
 
-### Till Later
+## Till Later
 
 And with this, I have to say "Next time, more". Hopefully, if you just arrived here, you will find interesting posts that will inform or entertain you.

@@ -4,10 +4,10 @@ date: 2015-09-22 08:45:00
 excerpt: Once you get into Functional Programming languages you are going to find a few new concepts and ideas that you have to take into account. This is the hub from which you can access to posts related to these new concepts.
 ---
  
-### What is this?
+## What is this?
 This, and a a number of other posts that will follow, have come about after starting a presentation called "Into Adventure - moving from Object-Oriented Programming (OOP) to Functional Programming (FP)". They are an expansion of the ideas and points of the talk.
 
-### The road to Functional Programming
+## The road to Functional Programming
 A long, long time ago, in a galaxy ... Well, a few years back I started investigating functional programming. The first thing that made me interested was a quote by <a name="return1"><a href="#1">Eric S. Raymond</a></a>:
 
 > Lisp is worth learning for the profound enlightenment experience you will have when you finally get it; that experience will make you a better programmer for the rest of your days, even if you never actually use Lisp itself a lot.
@@ -27,7 +27,7 @@ So I decided to get myself finally into it, properly.
 
 Let's begin the adventure!!!
 
-### The Posts
+## The Posts
 
 Here is the list of posts related to this journey. I will try to talk about a single point on each post, to not muddle too much the points.
 

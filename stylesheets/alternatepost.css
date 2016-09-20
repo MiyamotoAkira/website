@@ -15,3 +15,12 @@
 code {
 	color: #CC00EE;
 }
+
+.postTitle h1 {
+	font-size: 3em;
+	color: #006400
+}
+
+.post h2 {
+	color: #006400
+}
