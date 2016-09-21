@@ -1,6 +1,6 @@
 ---
 title: Which language to use
-date: 2016-09-01 17:00
+date: 2016-09-21 12:00
 excerpt: Are all languages equal? The answer is no. So, which one should we use? Maybe the one that requires less coding
 tags:
 - Languages
