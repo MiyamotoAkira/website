@@ -1,0 +1,21 @@
+---
+version: '3.1'
+
+services:
+  site:
+    build: .
+    command: bundle exec rake serve
+    volumes:
+      - '${PWD}/_posts:/usr/local/src/_posts:ro'
+      - '${PWD}/_includes:/usr/local/src/_includes:ro'
+      - '${PWD}/_data:/usr/local/src/_data:ro'
+      - '${PWD}/_layouts:/usr/local/src/_layouts:ro'
+      - '${PWD}/fonts:/usr/local/src/fonts:ro'
+      - '${PWD}/images:/usr/local/src/images:ro'
+      - '${PWD}/stylesheets:/usr/local/src/stylesheets:ro'
+      - '${PWD}/feed.xml:/usr/local/src/feed.xml:ro'
+      - '${PWD}/index.html:/usr/local/src/index.html:ro'
+      - '${PWD}/Rakefile:/usr/local/src/Rakefile:ro'
+      - '${PWD}/_config.yml:/usr/local/src/_config.yml:ro'
+    ports:
+      - '4000:4000'
