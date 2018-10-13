@@ -1,5 +1,4 @@
 language: ruby
-before_install:
 install:
 - bundle install
 script:
@@ -9,14 +8,12 @@ env:
     secure: K5+YS52x0wC+XTGAD6e/pjmYRyr9hw0JJvcEWE0JNE+HFbzeAAttrRhCO5KIcEWshWrCDJM47ijFlx1drhgUunlayfYLwbsz0mF8Xn0IQCqcs+XMST1h26I/YxSBul0HWyRIvBQGXFjRS/8UGWhvHKWBPwdRch7KNsbSMRzKfkMUxAXpH0d3ECpr49Btp97UrRcpq4z+Bot3aEDkV0Sljq97w4oZuJL9u7XS7C8et+Ze4S0ZjSrfTw4xJ8eAtSlIg8qZMBQNi8ZX6qKpAhzSmG3S62Dzqw/1uTNr315L6sTuZj3+3X6mLLCFxs4hjYaq7yaZRZ9gaKp/TelVuxY/diO+OutbjAAMm94KA/HId/qFyY7sf2xGNA9Q22E+Z3wiQDCXQabnctlXH2764IsvPuDNiw33HrlFRKEV9zIeSQvHsakfjXskfDju96cPP11xXdmWm/rFh4vw9ETsh+zfW3o8RGKza6+vJjUVJCvBC4/Ss+hc6BTKomu7hBk0RN+ikt5VoE9c5beMb2ECajwxfc/bb7FpZ8bfk0TiE/B5UZC6Er1rDZowb04yfg4cKqdOENBnQqazvOB4QNXdrVVZG87qsPsgh2jOxr8DpphuJeAgHbQS0OdexGYP9+nWEomrNAxnsy+4wqNPsGnKy7y5FUdgmYg/yvr6pfX6oDmBvts=
 dd:
   secure: CBv0Iuluvwt4ECbVxTXHvjSLe6dMyDBnoDbu9zXjgsHV9nvPaRgMXBymUmIKAPq3F1gmbDpKjsioN0mLoYu1C326nmf8s7LN2mW9KzlU9aVkNEC/mDUIKJhFgy++4/8YUuvknwV1CXt7Qn60+Nqq+LT4qiYuV3kY7p3eXpG0v7+iVy4t3ijuL2/XaogiBV7b96G9MjYNIVrsZc8TcYb9HzJE13MlkdeMrn+VEwOTgTDLIkUXRZsrGyVWTKGOIRQ2fJVp/jeQ3ruD1NTnFlsE1fBNVefASWOntrnClK5kqGwljQWgJJgHn3su1Q1ywf+SnUeEuS0BI67MttX1PxnQp4tJIscdcFrYeO8VOOHPd/eVNSe+u+5E2rWbDO62uh++kXyGOWuylngEOpAtV+cf9lMpDLJirFw3kES+RxCgmqGMoIqBcnfdntx18+I4VaEw2jvwoGuzmlw5JmDy2tQOGpmYV9gSINync3uQHzQQ90tea8DCNL4F2y7YabNQaLV/apA1Ne3tpn6pmi03o8qLtG4OAq+Zens+CowHzym0apg7NoRGGtPDkSj720B3HW1eZ9ASZNQ8ZQhpEXcLbLN/2t4/BG4PFgAq2nosDry5dW8c+j96ZiH8S1a/WBqVLIioNrw2JvlX5kPCqCIcUN7gmRuZVr+RLnjz/eXGfe5lEjw=
-
 before_deploy:
 - openssl aes-256-cbc -K $encrypted_c074d73df51e_key -iv $encrypted_c074d73df51e_iv
-  -in travis_rsa.enc -out ~/.ssh/travis_rsa -d
+  -in travis_rsa.enc -out travis_rsa -d
 - chmod 600 ~/.ssh/travis_rsa
 - ssh-add ~/.ssh/travis_rsa
 - echo -e "Host $DEPLOY_HOST\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
-
 deploy:
   provider: script
   skip_cleanup: true
