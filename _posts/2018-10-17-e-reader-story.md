@@ -8,6 +8,8 @@ tags:
 - Non-functional Requirements
 ---
 
+Crosspost from the [Codurance blog](https://codurance.com/2018/07/16/e-reader-story/)
+
 # The Setup
 
 I have always liked reading. Maybe because my parents cultivated the habit. They used to read before going to bed, they would buy me books, and their home was always full of books. I did follow in their stead, and throughout the years I have bought a massive amount of books. I love what is inside, I love the outside. Turning a page is an incredible experience, knowing that there is more knowledge or more emotion to be had on the other side.
