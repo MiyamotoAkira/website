@@ -24,7 +24,8 @@
 	  <br/>
 	</div>
 	<div class="postTitle">
-	  <h1>{{ page.title }}</h1>
+	    <h1>{{ page.title }}</h1>
+            <sub>{{ page.date | date: "%Y-%m-%d" }}</sub>
 	</div>
 	<div class="post">
 	  {{ content }}
