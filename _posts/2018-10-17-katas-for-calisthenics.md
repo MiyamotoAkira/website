@@ -7,7 +7,7 @@ tags:
 - Katas
 ---
 
-Crosspost from the [Codurane blog](https://codurance.com/2017/11/16/katas-for-functional-calisthenics/)
+Crosspost from the [Codurance blog](https://codurance.com/2017/11/16/katas-for-functional-calisthenics/)
 
 # The Setup
 
