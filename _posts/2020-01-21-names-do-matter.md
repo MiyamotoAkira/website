@@ -32,6 +32,10 @@ Naming things correctly is important.
 
 Of course there is a social/cultural aspect to it. Unless a language is truly dead (Latin, e.g.), languages are evolving. We don't talk the same English as 50 years ago, or 250 years ago. Culture changes, new words appear (for example, because certain wordsmith needs to do a rhyme), others go out of use. Some words get new meaning, others lose some of them. And some of them are so charged culturally that you want to exercise some discretion to their usage (something that . There is `master/slave`, for example, or `whitelist/blacklist`, words that replacing them is something we should all strive for. Without the cultural baggage, they don't even describe properly what they intend to (`safelist/blocklist` is so much more meaningful)
 
+# The Disclaimer
+
+Not long ago, a colleague described my naming as whimsical, which ... is more or less correct. I usually give names first within the ballpark (where is the ballpark is London-size), and then on second or third revision I try to improve them (make things work, make things right, make things fast). Also, I don't name things the same when I am on my own, than when I am doing pair programming, the second tends to be far better.
+
 # Name Things Properly
 
 Aim to improve your communications. We do communicate and read code more than what we write. So do be a bit pedantic in a business/technical environment. Stop wasting your time, your coworkers time, and your clients time. Try to make communication more precise.
