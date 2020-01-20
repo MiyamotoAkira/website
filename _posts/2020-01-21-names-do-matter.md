@@ -34,7 +34,7 @@ Of course there is a social/cultural aspect to it. Unless a language is truly de
 
 # The Disclaimer
 
-Not long ago, a colleague described my naming as whimsical, which ... is more or less correct. I usually give names first within the ballpark (where is the ballpark is London-size), and then on second or third revision I try to improve them (make things work, make things right, make things fast). Also, I don't name things the same when I am on my own, than when I am doing pair programming, the second tends to be far better.
+Not long ago, a colleague described my naming as whimsical, which is ... more or less correct. I usually give names first within the ballpark (where the ballpark is London-size), and then on second or third revision I try to improve them (make things work, make things right, make things fast). Also, I don't name things the same when I am on my own, than when I am doing pair programming; the latter tends to be far better.
 
 # Name Things Properly
 
