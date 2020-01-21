@@ -1,6 +1,6 @@
 ---
 title: Names do matter
-date: 2020-01-19 05:00
+date: 2020-01-21 05:00
 excerpt: Which one should we use?
 tags:
 - Software Design
@@ -34,7 +34,7 @@ Naming things correctly is important.
 
 # The Social Aspect
 
-Of course there is a social/cultural aspect to it. Unless a language is truly dead (Latin, e.g.), languages are continuosly evolving: We don't talk the same English as 50 years ago, or 250 years ago. Culture changes, new words appear (for example, because certain wordsmith needs to do a rhyme), others go out of use. Some words get new meaning, others lose some of them. And some are so charged culturally that you want to exercise some discretion to their usage. There is `master/slave`, for example, or `whitelist/blacklist`; words that we should all strive to replace. Without the cultural baggage, they don't even describe properly what they intend to (`safelist/blocklist` is so much more meaningful)
+Of course there is a social/cultural aspect to it. Unless a language is truly dead (Latin, e.g.), languages are continuosly evolving: We don't talk the same English as 50 years ago, or 250 years ago. Culture changes, new words appear (for example, because certain [wordsmith needs to do a rhyme](https://www.litcharts.com/blog/shakespeare/words-shakespeare-invented/)), others go out of use. Some words get new meaning, others lose some of them. And some are so charged culturally that you want to exercise some discretion to their usage. There is `master/slave`, for example, or `whitelist/blacklist`; words that we should all strive to replace. Without the cultural baggage, they don't even describe properly what they intend to (`safelist/blocklist` is so much more meaningful)
 
 # The Disclaimer
 
