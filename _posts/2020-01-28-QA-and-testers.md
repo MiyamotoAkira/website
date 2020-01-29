@@ -1,6 +1,6 @@
 ---
 title: QA and QE 
-date: 2020-01-25 05:00
+date: 2020-01-29 05:00
 excerpt: Where do QA should fit within your process?
 tags:
 - Process
