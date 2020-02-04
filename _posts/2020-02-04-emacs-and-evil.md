@@ -1,6 +1,6 @@
 ---
 title: Emacs and Evil
-date: 2020-01-28 05:00
+date: 2020-02-04 04:00
 excerpt: Why Emacs?, why Evil? and some code
 tags:
 - Emacs
