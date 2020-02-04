@@ -27,7 +27,7 @@ I can mostly write on my laptop keyboard without looking at all on it. Like I am
 
 # Emacs and Vim
 
-What I like both from [Emacs](https://www.gnu.org/software/emacs/) and [Vim](https://www.vim.org/) is that they are very much based around the idea of text editing and the use of the keyboard to its full extent. By default there is no mouse (X11 mode of Emacs does allow mouse, but I have currently disable the use of mouse for Emacs). Every single command/function/action that you can take on Emacs or Vim can be done using the keyboard. I have a strong dislike for tools that force me to use the mouse (every single IDE).
+What I like both from [Emacs](https://www.gnu.org/software/emacs/) and [Vim](https://www.vim.org/) is that they are very much based around the idea of text editing and the use of the keyboard to its full extent. By default there is no mouse (X11 mode of Emacs does allow mouse, but I have currently disable the use of [mouse for Emacs]({% post_url 2019-01-11-no-mouse %})). Every single command/function/action that you can take on Emacs or Vim can be done using the keyboard. I have a strong dislike for tools that force me to use the mouse (every single IDE).
 
 I think Emacs is the superior application, elisp and the ability to just go bananas with plugins and setup is unmatched. But Vim actually has the better keybindings for editing, even when the modes sometimes annoy me. Of course, once you have [M-x buttefly](https://www.xkcd.com/378/), you can find [evil](https://github.com/emacs-evil/evil) the package to bring vim keybindings to Emacs. 
 
