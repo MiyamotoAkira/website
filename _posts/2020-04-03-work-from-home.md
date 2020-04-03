@@ -29,6 +29,9 @@ Now a few pointers about what I am doing, what I think works best for me on this
 - I indicate in our chat when I start and finish working, when i go to and back from lunch, sometimes when I go to make a hot drink. This is to keep myself within the mind of my co-workers.
 - During the mornings I open the windows in my house to make sure that air doesn't become stale.
 - Dress up in the morning the same as if I was going to the office. A bit of respect for you colleagues when doing remote pairing, but also a mental change for you to understand you are going into work.
+- During working hours I keep my camera and micrphone connected to is easy to go into calls (I work on a desktop). But as soon as the working day is over, I disconnect them.
+
+As you can see, there are a lot of actions that I take to mentally switch on and off myself. I don't want my work to spill outside of hours while I am at home. Otherwise lines get blurred and you never switch off.
 
 # The future
 
