@@ -12,7 +12,7 @@ Sadly, my writing schedule got interrupted by being sick for two weeks (funky CO
 
 I dislike working from home. A lot. There are several reasons for it: 
 - First, I still think that face to face communication is superior. Even once you start getting used to remote calls, you still miss body language that is important for communication, especially when you have multiple people on the call.
-- Second, I find that I get far more distracted at home that I do in an office. There are far more things around me that distract me, than in an office, where everything is far more functional. Mind you, not as bad now with the new desktop orientation.
+- Second, I find that I get far more distracted at home that I do in an office, where everything is far more functional. Mind you, not as bad now with the new desktop orientation, which helps a bit avoiding distractions.
 - Third, I feed from the energy of other people around me. Is so much easier to work when there are other people around you working 
 - Fourth, I found that I tend to move more in the office, going to talk with people, than at home, with the corresponding effect on my health. Thanksfully, now I have a desk that can be manually raised, so that should help a bit.
 
