@@ -28,6 +28,7 @@ Now a few pointers about what I am doing, what I think works best for me on this
 - Try to remote pair as much as possible. Again, this is to make sure that I have constant human contact.
 - I indicate in our chat when I start and finish working, when i go to and back from lunch, sometimes when I go to make a hot drink. This is to keep myself within the mind of my co-workers.
 - During the mornings I open the windows in my house to make sure that air doesn't become stale.
+- Dress up in the morning the same as if I was going to the office. A bit of respect for you colleagues when doing remote pairing, but also a mental change for you to understand you are going into work.
 
 # The future
 
