@@ -1,6 +1,6 @@
 ---
 title: Adding insert lines to Emacs
-date: 2020-04-05 04:00
+date: 2020-04-07 04:00
 excerpt: Why and how I have added functionality to insert lines
 tags:
 - Emacs
