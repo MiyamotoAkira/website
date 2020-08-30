@@ -1,4 +1,4 @@
-module TagPage
+module TagCloud
   
   class TagInfo
     attr_reader :tag, :posts
@@ -77,4 +77,12 @@ module TagPage
     end
 
   end
+
+  module TagFilters
+    def tag_link(obj)
+      "<a href='/tag/#{TagInfo.canonize(obj)}'>#{obj}</a>"
+    end
+  end
+
+  Liquid::Template.register_filter(TagCloud::TagFilters)
 end

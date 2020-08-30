@@ -26,6 +26,8 @@
     <div class="postTitle">
       <h1>{{ page.title }}</h1>
       <sub>{{ page.date | date: "%Y-%m-%d" }}</sub>
+      <br/>
+      <sub>{% for tag in page.tags %} {{ tag | tag_link }} {% endfor %}</sub>
     </div>
     <div class="post">
       {{ content }}
