@@ -18,5 +18,6 @@ services:
       - '${PWD}/index.html:/usr/local/src/index.html:ro'
       - '${PWD}/Rakefile:/usr/local/src/Rakefile:ro'
       - '${PWD}/_config.yml:/usr/local/src/_config.yml:ro'
+      - '${PWD}/_plugins:/usr/local/src/_plugins:ro'
     ports:
       - '4000:4000'
