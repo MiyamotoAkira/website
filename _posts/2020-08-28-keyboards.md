@@ -14,7 +14,7 @@ Took me a bit of time to actually go for my first mechanical keyboard (they are 
 So now is time to review them (lightly), in the order in which I bought them.
  
 ## DasKeyboard 4
-<img src="/images/posts/keyboards/DasKeyboard.jpg" alt="DasKeyboard 4"/>
+<img src="/images/posts/keyboards/DasKeyboard.jpg" alt="DasKeyboard 4" class="responsive"/>
 <a href="https://www.daskeyboard.com/daskeyboard-4-professional/">Das Keyboard 4</a>
 
 This was my first mechanical keyboard. And is still in my top 2.
@@ -26,7 +26,7 @@ On the con side there are three items: the funky plastic ruler that should not e
 If you want a first mechanical keyboard, this is the one I recommend (even if you change switches to Brown)
 
 ## Razer BlackWidow
-<img src="/images/posts/keyboards/BlackWidow.jpg" alt="Razer BlackWidow"/>
+<img src="/images/posts/keyboards/BlackWidow.jpg" alt="Razer BlackWidow" class="responsive"/>
 <a href="https://support.razer.com/gaming-keyboards/razer-blackwidow-2014/">Razer BlackWidow 2014</a>
 
 I bought this one for playing, as I didn't want to mangle my DasKeyboard 4 while hitting [Shield Slam](https://www.wowhead.com/spell=23922/shield-slam) like a maniac. 
@@ -34,7 +34,7 @@ I bought this one for playing, as I didn't want to mangle my DasKeyboard 4 while
 Like other gaming keyboards, it has some additional keys for macros, thought never really used them. Instead of Cherry Mx Blue it has [Razer Green](https://www.razer.com/razer-mechanical-switches), which are very similar to Cherry Mx Blue, but they have shorter travel and a much lower actuation force, quite useful for gaming. The body is plastic, but still feels heavy. It has also a non-detachable cable (with the audio cable), USB connectors, and audio connectors. A very solid keyboard. Nowadays, I think you can only buy the back-lightning version.
 
 ## Filco MiniLa
-<img src="/images/posts/keyboards/MiniLa.jpg" alt="Filco MiniLa"/>
+<img src="/images/posts/keyboards/MiniLa.jpg" alt="Filco MiniLa" class="responsive"/>
 <a href="https://www.diatec.co.jp/en/det.php?prod_c=1322">Filco MiniLa</a>
 
 This is the first 60% keyboard I bought. The reason is that the desk I was using at work was a "small" desk (120 width) and I found that I had not enough space available. I went for the Filco offering as I had a colleague that had the Filco Ninja Majestouch. It has Cherry Mx Blue keys and the body is plastic, which shows on the weight (quite light), though doesn't feel breakable. First detachable cable. Detachable cables are good. In general a nice keyboard.
@@ -44,7 +44,7 @@ My biggest issue with it is that the right shift is 1u (same size as any letter 
 I stopped using it because of the continuous mistypes. It that was the only keyboard used, probably I would get used to it, but because I was alternating between that one, my home keyboard(s) and the laptop keyboard, it was just too much aggro.
  
 ## Vortex Pok3r
-<img src="/images/posts/keyboards/Pok3r.jpg" alt="Pok3r"/>
+<img src="/images/posts/keyboards/Pok3r.jpg" alt="Pok3r" class="responsive"/>
 <a href="http://www.vortexgear.tw/vortex2_3.asp?show=1&kind=47&run=sure&kind2=220&kind3=&a2=">Vortex Pok3r</a> 
 
 Unlike the other keyboards, the photo is not mine, due to the keyboard still locked at a previous client offices (sigh).
@@ -52,7 +52,7 @@ Unlike the other keyboards, the photo is not mine, due to the keyboard still loc
  Which is a pity because this is my favourite keyboard, edging the DasKeyboard 4. I wanted to move away from Cherry Mx Blue for office usage because, although I love the feeling, they are noisy ... very noisy. I am not a fan of Brown due to the lower operating force. So I got [Cherry Mx Clear](https://www.cherrymx.de/en/mx-special/mx-clear.html), which are tactile bump keys like Brown, but heavier (65 cN vs 55 cN operating force). The body is metal. The weight is satisfactory. Also, quite important, is programmable (which for someone that switches Left Ctrl and Caps Lock is pretty useful). The size is good, the feel is good, the switches are superb ... it is a great keyboard ... a marvellous keyboard.
  
 ## Vortex Pok3r RGB
-<img src="/images/posts/keyboards/Pok3rRGB.jpg" alt="Pok3r RGB"/>
+<img src="/images/posts/keyboards/Pok3rRGB.jpg" alt="Pok3r RGB" class="responsive"/>
 <a href="http://www.vortexgear.tw/vortex2_3.asp?show=1&kind=47&run=sure&kind2=220&kind3=&a2=">Vortex Pok3r</a> 
 
 I bought this one for home because I wanted the same experience I was having with the Pok3r at work. The reason I went with the RGB is two-fold: The back-lightning is pretty convenient for home, and there was no option with my preferred switches (if a different version of the Pok3r had been available with Clear switches I would have bough it).
@@ -60,7 +60,7 @@ I bought this one for home because I wanted the same experience I was having wit
 This one has Cherry Mx Brown. The fact that they have such low operating force makes them worse for me, but is not a biggie and, like all Cherry Mx, they are great switches. Like the above Pok3r the body is metal, something that I love. It is also programmable and in addition you can program the back-lights (so I have a day layer and a night layer). The only real problem this keyboard has, which didn't appear on the other Pok3r, is that if you hit the right Shift and the enter key on specific places (left most for the former, bottom left for the latter) they will make a squeaky sound. At some point I have to see how to fix that, because it drives me slightly crazy.
  
 ## HHKB
-<img src="/images/posts/keyboards/HHKB.jpg" alt="HHKB"/>
+<img src="/images/posts/keyboards/HHKB.jpg" alt="HHKB" class="responsive"/>
 <a href="https://hhkeyboard.us/">HHKB</a>
 
 This is the latest addition to my collection. This keyboard uses [Topre switches](https://keyboardkings.com/what-are-topre-switches/), which are not exactly mechanical (is capacitive, with a combo spring/rubber dome). They are nice, very nice, with really smooth travel and awesome sound. The body is plastic, doesn't feel weak or bendable, but is not metal.
